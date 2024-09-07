@@ -1,0 +1,112 @@
+* {
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #3e4b53b9;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+  gap: 1rem;
+}
+
+.left-side {
+  backdrop-filter: blur(10px);
+  background: rgba(243, 243, 243, 0.5);
+  line-height: 10px;
+  border-radius: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
+}
+.left-side h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.left-side button {
+  text-align: center;
+}
+button {
+  background: linear-gradient(135deg, #aaeaff, #d7feff);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+button:hover {
+  background: linear-gradient(135deg, #d2d1d2, #a7effc);
+  color: black;
+  box-shadow: 2px 2px 15px rgba(130, 183, 252, 0.3);
+}
+.right-side {
+  backdrop-filter: blur(10px);
+  background: rgba(241, 240, 240, 0.5);
+  padding-top: 20px;
+  border-radius: 30px;
+  width: 50%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.right-side h1 {
+  font-size: 2rem;
+}
+/* Hide message divs by default */
+.message {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: none;
+  width: 95%;
+}
+
+#weather-message {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: none;
+  width: 80%;
+}
+
+/* Theme classes */
+.light-theme {
+  color: black;
+  background-image: url("./images/lightt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dark-theme {
+  color: white;
+  background-image: url("./images/dark.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blue-theme {
+  color: white;
+  background-image: url("./images/blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+input {
+  width: 70%;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
